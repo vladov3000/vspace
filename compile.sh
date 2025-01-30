@@ -1,7 +1,9 @@
-gcc vspace.c \
-    -O3 \
-    -framework OpenGL \
-    -Iglfw-3.3.6.bin.MACOS/include/ \
-    -Lglfw-3.3.6.bin.MACOS/lib-x86_64/ \
-    -lglfw \
-    -o vspace
+clang vspace.c \
+      -O3 \
+      -framework Cocoa \
+      -framework OpenGL \
+      -framework IOKit \
+      -Iglfw-3.4.bin.MACOS/include/ \
+      -Lglfw-3.4.bin.MACOS/lib-arm64/ \
+      -lglfw3 \
+      -o vspace
